@@ -1,0 +1,11 @@
+node -v
+npm init -y
+npm install //or just npm i   
+npm install package_name
+npm remove package_name
+
+npm install -g yarn
+yarn init
+run yarn //or just yarn// same as // npm install
+yarn add package_name
+yarn remove package_name
