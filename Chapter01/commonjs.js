@@ -1,5 +1,18 @@
-const { log, print } = require("./txt-helpers");
+//node imports
+const { log, print } = require("./text-helpers");
 
-const print(message) => log(message, new Date());
-const log(message, timestamp) => console.log(`${timestamp.toString()}: ${message}`);
-module.exports = {print, log}
+// function print(message) {
+//   log(message, new Date());
+// }
+// function log(message, timestamp) {
+//   console.log(`${timestamp.toString()}: ${message}`);
+// }
+
+// const print = (message) => log(message, new Date());
+// const log = (message, timestamp) => console.log(`${timestamp.toString()}: ${message}`);
+
+const print(message) => log(message, new Date())
+const log(message, timestamp) => console.log(`${timestamp.toString()}: ${message}`)
+
+//node exports
+module.exports = { print, log };

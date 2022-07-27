@@ -198,11 +198,7 @@ class Expedition extends Vacation {
     console.log(`Bring your ${this.gear.join(" and your ")}`);
   }
 }
-const trip2 = new Expedition("Mt. Whitney", 3, [
-  "sunglasses",
-  "prayer flags",
-  "camera"
-]);
+const trip2 = new Expedition("Mt. Whitney", 3, ["sunglasses", "prayer flags", "camera"]);
 trip2.print();
 // Mt. Whitney will take 3 days.
 // Bring your sunglasses and your prayer flags and your camera
