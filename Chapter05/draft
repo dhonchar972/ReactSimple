@@ -1,0 +1,33 @@
+npm init -y
+npm install React-dom serve
+// npm install --save-dev webpack webpack-cli
+npm install webpack webpack-cli
+./recipe-app/assets/bundle.js // zipped by webpack files for sending in browser
+npm install babel-loader @babel/core
+npm install @babel/preset-env @babel/preset-react
+npx webpack --mode development
+
+"scripts": {
+"build": "webpack --mode production"
+},
+
+npm run build
+
+//webpack.config.js with source mapping
+module.exports = {
+...
+devtool: "#source-map" // Add this option for source mapping
+};
+
+./recipe-app/assets/bundle.map // map for debugging code
+
+npm install -g create-react-app
+
+create-react-app my-project
+// better use npx "npx create-response-app my-project"
+npm start // yarn start
+npm test // yarn test
+npm run build // yarn build
+
+//CodeSandbox — IDE
+codesandbox.io
