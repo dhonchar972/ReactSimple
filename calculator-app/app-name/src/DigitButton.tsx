@@ -1,8 +1,8 @@
 import { ACTIONS } from "./App"
 
 export default function DigitButton({ dispatch, digit }: {
-  dispatch: any
-  digit: any
+  dispatch: React.Dispatch<object>
+  digit: string
 }): JSX.Element {
   return (
     <button

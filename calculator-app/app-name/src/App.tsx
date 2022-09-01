@@ -97,10 +97,11 @@ function reducer(state: any, { type, payload }: any) {
   }
 }
 
+
 function evaluate({ currentOperand, previousOperand, operation }: {
-  currentOperand: any;
-  previousOperand: any;
-  operation: any;
+  currentOperand: string;
+  previousOperand: string;
+  operation: string;
 }): string {
   const prev = parseFloat(previousOperand)
   const current = parseFloat(currentOperand)
@@ -126,11 +127,12 @@ function evaluate({ currentOperand, previousOperand, operation }: {
 const INTEGER_FORMATTER = new Intl.NumberFormat("en-us", {
   maximumFractionDigits: 0,
 })
-function formatOperand(operand: any) {
+
+function formatOperand(operand: string) {
   if (operand == null) return
   const [ integer, decimal ] = operand.split('.')
-  if (decimal == null) return INTEGER_FORMATTER.format(integer)
-  return `${INTEGER_FORMATTER.format(integer)}.${decimal}`
+  if (decimal == null) return INTEGER_FORMATTER.format(parseInt(integer))
+  return `${INTEGER_FORMATTER.format(parseInt(integer))}.${decimal}`
 }
 
 function App() {

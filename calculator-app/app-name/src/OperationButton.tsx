@@ -1,8 +1,8 @@
 import { ACTIONS } from "./App"
 
 export default function OperationButton({ dispatch, operation }: {
-  dispatch: any
-  operation: any
+  dispatch: React.Dispatch<object>
+  operation: string
 }): JSX.Element {
   return (
     <button
